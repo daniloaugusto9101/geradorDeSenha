@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script defer src="script.js"></script>
-    <title>Gerado de Senha</title>
+    <title>Gerador de Senha</title>
 </head>
 <body>
-    <img src="logo.png" alt="#" class="logo">
-    <main class="container-input">
-        <span>Tamanho <span id="valor"></span> caracteres</span>
-        <input type="range" id="slider" class="slider" min="5" max="25" value="15">
-        <button id="button" class="button-cta">Gerar senha</button>
-    </main>
-    <div id="container-password" class="container-password hide">
-        <span class="title">Sua senha gerada foi: </span>
-        <span id="password" class="password">123123123</span>
-        <span class="tooltip">Clique na senha para copiar 👆</span>
+    <div class="container">
+        <img src="logo.png" class="logo">
+        <span>Tamanho <span>15</span> caraceres</span>
+        <input type="range" min="5" max="25" value="10">
+        <button class="btn">Gerar senha</button>
+        <span>Sua senha gerada foi:</span>
+        <div class="container-icos">
+            <span class="ico-senha">asdasd</span>
+            <span class="ico-copiar ico"><i class="fa-regular fa-paste"></i></span>
+            <span class="ico-copiar-ok ico"><i class="fa-solid fa-check-double"></i></span>           
+        </div>
     </div>
 </body>
 </html>
